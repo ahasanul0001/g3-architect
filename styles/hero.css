@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Work Sans", sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* share style starts */
+.font{
+    font-family: "Work Sans", sans-serif;
+}
+.titleText{
+    color: rgb(19, 19, 19);
+    font-family: "Work Sans", sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.normalText{
+    color: rgb(114, 114, 114);
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.display-flex{
+    display: flex; 
+}
+
+/* shared style ends */
+.hero{
+    background: rgba(255, 144, 14, 0.1);
+}
+nav, .banner, .bannerTitle, .bannerText{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* nav style */
+.hero nav{
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.hero nav ul{
+    list-style: none;
+    gap: 60px;
+}
+nav ul a{
+    text-decoration: none;
+
+    color: rgb(66, 66, 66);
+    font-size: 1.16rem;
+    font-weight: 500;
+}
+/* banner style */
+.banner{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    padding-bottom: 50px;
+}
+.hero .bannerTitle{
+    color: rgb(19, 19, 19);
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+} 
+.hero .bannerText{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    max-width: 868px;
+    text-align: center;
+}
+.exploreBtn{
+    border-radius: 8px;
+    background-color: rgb(255, 144, 14);
+    cursor: pointer;
+    padding: 25px 20px;
+    border-style: none;
+    margin-bottom: 50px;
+
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center; 
+}
+.bannerImage{
+    border-radius: 8px;
+    width: 100%;
+}
+
+@media screen and (max-width:576px){
+    .hero nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero nav ul{
+        margin-top: 30px;
+        gap: 20px;
+        margin-bottom: 0px;
+    }
+}
